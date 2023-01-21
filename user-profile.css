@@ -1,0 +1,142 @@
+.nav .wrapper{
+  position: absolute;
+  margin-top: 5px;
+  display: flex;
+  width: 300px;
+  background: #242526;
+  border-radius: 5px;
+  display: none;
+  transition: .5s ease-in-out;
+}
+
+.nav .drop-btn{
+  width: 300px;
+  /* background: #242526; */
+  color:#b0b3b8;
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+
+}
+.nav .drop-btn .p_cont {
+  display: flex;
+  position: relative;
+
+}
+.nav .drop-btn .p_cont .picon{
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  background: white;
+  margin:10px;
+}
+
+.nav .drop-btn .p_cont span{
+  position: absolute;
+
+  right: 0px;
+  top:10px;
+  line-height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav .drop-btn .p_cont span img{
+  background: rgb(105, 110, 100);
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  cursor: pointer;
+  align-items: center;
+  border: 2px solid wheat;
+}
+.nav .drop-btn .p_cont span img:hover{
+  width: 35px;
+  height: 35px;
+  border-radius:50%;
+  background: #ff512f;
+  background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+  background: linear-gradient(to right, #dd2476, #ff512f);
+ 
+}
+.nav .wrapper .menu-bar{
+  
+  transition: backgroung-color 0.3s ease-in;
+}
+.nav .wrapper .setting-drop{
+  
+  transition: backgroung-color 0.3s ease-in;
+}
+
+.nav .wrapper ul{
+  list-style: none;
+  width: 300px;
+  padding: 10px;
+}
+.nav .wrapper ul li{
+  line-height: 55px;
+}
+.nav .wrapper ul li a{
+  position: relative;
+  text-decoration: none;
+  color:#b0b3b8;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 8px;
+}
+.nav .wrapper ul li:hover a{
+  background: #3A3B3C;
+}
+.wrapper ul li a .icon{
+  height: 40px;
+  width: 40px;
+  margin-right: 13px;
+  background: #ffffff1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.wrapper ul li a .icon span{
+  margin-top:20px;
+}
+
+.wrapper ul li a i{
+position: absolute;
+right: 10px;
+top:5px;
+font-size: 25px;
+pointer-events: none;
+font-weight: 700;
+}
+.wrapper .setting-drop .arrow{
+position: relative;
+padding-left: 10px;
+font-size: 20px;
+color:#b0b3b8;
+cursor: pointer;
+
+
+}
+.wrapper .setting-drop .arrow img{
+  position: absolute;
+  border: 2px solid white;
+  top:10px;
+  border-radius: 50%;
+  cursor: pointer;
+  
+  
+  }
+  .wrapper .setting-drop .arrow span{
+    margin-left: 50px;
+    cursor: pointer;
+    
+    
+    }
+

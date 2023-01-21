@@ -1,0 +1,76 @@
+.center{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.outer{
+  margin: 0 10px;
+  background: linear-gradient(#14ffe9, #ffeb3b,#ff00e0);
+  position: relative;
+}
+.button{
+  height: 50px;
+  width: 120px;
+  border-radius: 50px;
+}
+.circle{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.outer button,.outer span{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.outer button{
+  background: #111;
+  color: #f2f2f2;
+  outline: none;
+  border: none;
+  z-index: 9;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button a{
+  text-decoration: none;
+}
+.button button{
+  height: 43px;
+  width: 115px;
+  border-radius: 50px;
+}
+.circle button{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+.outer span{
+  height: 100%;
+  width: 100%;
+  background: inherit;
+}
+.button span{
+  border-radius: 50px;
+}
+.circle span{
+  border-radius: 50%;
+}
+.outer:hover span:nth-child(1){
+filter: blur(4px);
+}
+.outer:hover span:nth-child(2){
+filter: blur(10px); 
+}
+.outer{
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  100%{
+      filter:hue-rotate(360deg)
+  }
+}
